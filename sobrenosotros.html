@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="icon" href="img/logo.png" class="img-fluid" type="image/png">
+    <title>Nich</title>
+  <style>
+    /* Estilos para las imágenes pequeñas */
+    .img-thumbnail {
+      cursor: pointer; /* Cambia el cursor a una mano al pasar sobre las imágenes */
+      transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para la sombra */
+    }
+    .img-thumbnail.active {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Sombra para la imagen activa */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <img src="img/logo.png" alt="Logo" width="100" height="100">
+          <a class="navbar-item" href="index.html">Nich</a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarSupportedContent">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarSupportedContent" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html">Inicio</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Ropa</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="vestidos.html">Vestidos</a>
+                <a class="navbar-item" href="blusas.html">Blusas</a>
+                <a class="navbar-item" href="jeans.html">Pantalones</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="bolsos.html">Bolsos</a>
+            <a class="navbar-item" href="sobrenosotros.html">Sobre Nosotros</a>
+            <a class="navbar-item" href="contactanos.html">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+  <main class="container mt-5">
+    <section class="section">
+      <div class="content">
+        <h1 class="title has-text-centered">Sobre Nosotros</h1>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <!-- Descripción -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h2>Descripción</h2>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Somos una tienda en línea especializada en ropa y bolsos para damas. Nuestra misión es proporcionar productos de alta calidad y a la moda a precios accesibles para mujeres de todas las edades y estilos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Nuestra Historia -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h2>Nuestra Historia</h2>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Desde nuestro inicio en 2023, nos hemos dedicado a curar una selección única de prendas de vestir y accesorios que reflejan las últimas tendencias de la moda. Nuestro equipo de expertos en moda está constantemente buscando las mejores piezas para añadir a nuestra colección, garantizando que siempre encuentres algo nuevo y emocionante cada vez que visites nuestra tienda en línea.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Nuestra Misión -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h2>Nuestra Misión</h2>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>En Nich, nos esforzamos por ofrecer una experiencia de compra excepcional a cada cliente. Creemos que la moda es una forma de expresión personal, y queremos ayudarte a encontrar las prendas y accesorios perfectos que te hagan sentir segura y hermosa en cualquier ocasión.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Nuestros Valores -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h2>Nuestros Valores</h2>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Calidad: Nos comprometemos a ofrecer productos de la más alta calidad que estén hechos para durar.</li>
+                <li>Estilo: Nos mantenemos al tanto de las últimas tendencias de la moda para ofrecerte opciones a la moda y elegantes.</li>
+                <li>Servicio al Cliente: Tu satisfacción es nuestra prioridad, y estamos aquí para ayudarte en cada paso del camino.</li>
+                <li>Accesibilidad: Creemos que la moda de calidad no debería costar una fortuna, por lo que nos esforzamos por mantener nuestros precios accesibles.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    // JavaScript para controlar la funcionalidad del acordeón
+    document.addEventListener('DOMContentLoaded', function () {
+      var accordions = document.querySelectorAll('.accordion');
+      accordions.forEach(function (accordion) {
+        var items = accordion.querySelectorAll('.accordion-item');
+        items.forEach(function (item) {
+          var header = item.querySelector('.accordion-header button');
+          header.addEventListener('click', function () {
+            var collapse = item.querySelector('.accordion-collapse');
+            var parent = accordion.getAttribute('id');
+            var controls = header.getAttribute('data-bs-target');
+            var expanded = header.getAttribute('aria-expanded');
+            collapse.classList.toggle('show');
+            if (expanded === 'true') {
+              header.setAttribute('aria-expanded', 'false');
+            } else {
+              header.setAttribute('aria-expanded', 'true');
+            }
+            var otherItems = accordion.querySelectorAll('.accordion-item');
+            otherItems.forEach(function (otherItem) {
+              var otherHeader = otherItem.querySelector('.accordion-header button');
+              var otherCollapse = otherItem.querySelector('.accordion-collapse');
+              if (otherHeader !== header) {
+                otherCollapse.classList.remove('show');
+                otherHeader.setAttribute('aria-expanded', 'false');
+              }
+            });
+          });
+        });
+      });
+    });
+  </script>
+
+  <footer class="footer" style="background-color: #56585a; color: white;">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column">
+          <h4 class="title is-4">Síguenos</h4>
+          <div class="redes-sociales">
+            <a href="#"><img src="img/iconos/facebook.png" style="width: 24px; height: 24px;" alt="Facebook"></a>
+            <a href="#"><img src="img/iconos/instagram.png" style="width: 24px; height: 24px;" alt="Instagram"></a>
+            <a href="#"><img src="img/iconos/twitter.png" style="width: 24px; height: 24px;" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-4">Agrega un comentario</h4>
+          <input type="text" class="input" id="inputComentario" placeholder="Escribe tu comentario...">
+          <div class="buttons is-centered">
+            <button class="button is-primary" type="button">Enviar</button>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-4">Contacto</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="tel:+123456789"><img src="img/iconos/llamada-telefonica.png" style="width: 24px; height: 24px;" alt="Teléfono"></a> Número de telefono</li>
+            <li class="list-group-item"><a href="mailto:info@example.com"><img src="img/iconos/correo.png" style="width: 24px; height: 24px;" alt="Correo electrónico"></a> Correo electrónico</li>
+            <li class="list-group-item"><a href="mailto:info@example.com"><img src="img/iconos/whatsapp.png" style="width: 24px; height: 24px;" alt="Whatsapp"></a> Whatsapp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="icon" href="img/logo.png" class="img-fluid" type="image/png">
+    <title>Nich</title>
+  <style>
+    /* Estilos para las imágenes pequeñas */
+    .img-thumbnail {
+      cursor: pointer; /* Cambia el cursor a una mano al pasar sobre las imágenes */
+      transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para la sombra */
+    }
+    .img-thumbnail.active {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Sombra para la imagen activa */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <img src="img/logo.png" alt="Logo" width="100" height="100">
+          <a class="navbar-item" href="index.html">Nich</a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarSupportedContent">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarSupportedContent" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html">Inicio</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Ropa</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="vestidos.html">Vestidos</a>
+                <a class="navbar-item" href="blusas.html">Blusas</a>
+                <a class="navbar-item" href="jeans.html">Pantalones</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="bolsos.html">Bolsos</a>
+            <a class="navbar-item" href="sobrenosotros.html">Sobre Nosotros</a>
+            <a class="navbar-item" href="contactanos.html">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">BOLSOS</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <!-- Bolso 1 -->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/bolsos/bolso1.jpg" alt="Bolso 1">
+                </figure>
+              </div>
+              <div class="card-content">
+                <h5 class="title is-5">Bolso azul dama</h5>
+                <p class="subtitle is-6">$299.99</p>
+                <ul>
+                  <li>Tamaño: Chico</li>
+                </ul>
+                <a href="#" class="button is-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- Bolso 2 -->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/bolsos/bolso2.jpg" alt="Bolso 2">
+                </figure>
+              </div>
+              <div class="card-content">
+                <h5 class="title is-5">Bolso blanco</h5>
+                <p class="subtitle is-6">$159.90</p>
+                <ul>
+                  <li>Tamaño: Mediano</li>
+                </ul>
+                <a href="#" class="button is-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- Bolso 3 -->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/bolsos/bolso3.jpg" alt="Bolso 3">
+                </figure>
+              </div>
+              <div class="card-content">
+                <h5 class="title is-5">Bolso naranja</h5>
+                <p class="subtitle is-6">$399.99</p>
+                <ul>
+                  <li>Tamaño: Chico</li>
+                </ul>
+                <a href="#" class="button is-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- Bolso 4 -->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/bolsos/bolso4.jpg" alt="Bolso 4">
+                </figure>
+              </div>
+              <div class="card-content">
+                <h5 class="title is-5">Bolso amarillo</h5>
+                <p class="subtitle is-6">$299.99</p>
+                <ul>
+                  <li>Tamaño: Chico</li>
+                </ul>
+                <a href="#" class="button is-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Modales -->
+  <div class="modal" id="exampleModal1">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <h3 class="title">Bolso azul</h3>
+        <img src="img/bolsos/bolso1.jpg" id="imagenGrande1" alt="Bolso azul">
+        <!-- Tres imágenes pequeñas -->
+        <div class="columns mt-3">
+          <div class="column">
+            <img src="img/bolsos/bolso1.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso1.1.jpg" alt="Bolso azul">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso1.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso1.2.jpg" alt="Bolso azul">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso1.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso1.3.jpg" alt="Bolso azul">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- Modales -->
+  <div class="modal" id="exampleModal2">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <h3 class="title">Bolso blanco</h3>
+        <img src="img/bolsos/bolso2.jpg" id="imagenGrande2" alt="Bolso blanco">
+        <!-- Tres imágenes pequeñas -->
+        <div class="columns mt-3">
+          <div class="column">
+            <img src="img/bolsos/bolso2.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso2.1.jpg" alt="Bolso blanco">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso2.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso2.2.jpg" alt="Bolso blanco">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso2.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso2.3.jpg" alt="Bolso blanco">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- Modales -->
+  <div class="modal" id="exampleModal3">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <h3 class="title">Bolso naranja</h3>
+        <img src="img/bolsos/bolso3.jpg" id="imagenGrande3" alt="Bolso naranja">
+        <!-- Tres imágenes pequeñas -->
+        <div class="columns mt-3">
+          <div class="column">
+            <img src="img/bolsos/bolso3.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso3.1.jpg" alt="Bolso naranja">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso3.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso3.2.jpg" alt="Bolso naranja">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso3.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso3.3.jpg" alt="Bolso naranja">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- Modales -->
+  <div class="modal" id="exampleModal4">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <h3 class="title">Bolso amarillo</h3>
+        <img src="img/bolsos/bolso4.jpg" id="imagenGrande4" alt="Bolso amarillo">
+        <!-- Tres imágenes pequeñas -->
+        <div class="columns mt-3">
+          <div class="column">
+            <img src="img/bolsos/bolso4.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso4.1.jpg" alt="Bolso amarillo">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso4.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso4.2.jpg" alt="Bolso amarillo">
+          </div>
+          <div class="column">
+            <img src="img/bolsos/bolso4.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/bolsos/bolso4.3.jpg" alt="Bolso amarillo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <script>
+    // JavaScript para controlar la funcionalidad de los modales
+    document.addEventListener('DOMContentLoaded', function () {
+      // Modales
+      var modals = document.querySelectorAll('.modal');
+      var modalButtons = document.querySelectorAll('.modal-button');
+      var modalCloses = document.querySelectorAll('.modal-close');
+
+      modalButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          var target = button.getAttribute('data-target');
+          var modal = document.getElementById(target);
+          modal.classList.add('is-active');
+        });
+      });
+
+      modalCloses.forEach(function (close) {
+        close.addEventListener('click', function () {
+          var modal = close.closest('.modal');
+          modal.classList.remove('is-active');
+        });
+      });
+
+      modals.forEach(function (modal) {
+        modal.addEventListener('click', function (event) {
+          if (event.target === modal) {
+            modal.classList.remove('is-active');
+          }
+        });
+      });
+    });
+  </script>
+
+  <footer class="footer" style="background-color: #56585a; color: white;">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column">
+          <h4 class="title is-4">Síguenos</h4>
+          <div class="redes-sociales">
+            <a href="#"><img src="img/iconos/facebook.png" style="width: 24px; height: 24px;" alt="Facebook"></a>
+            <a href="#"><img src="img/iconos/instagram.png" style="width: 24px; height: 24px;" alt="Instagram"></a>
+            <a href="#"><img src="img/iconos/twitter.png" style="width: 24px; height: 24px;" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-4">Agrega un comentario</h4>
+          <input type="text" class="input" id="inputComentario" placeholder="Escribe tu comentario...">
+          <div class="buttons is-centered">
+            <button class="button is-primary" type="button">Enviar</button>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-4">Contacto</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="tel:+123456789"><img src="img/iconos/llamada-telefonica.png" style="width: 24px; height: 24px;" alt="Teléfono"></a> Número de telefono</li>
+            <li class="list-group-item"><a href="mailto:info@example.com"><img src="img/iconos/correo.png" style="width: 24px; height: 24px;" alt="Correo electrónico"></a> Correo electrónico</li>
+            <li class="list-group-item"><a href="mailto:info@example.com"><img src="img/iconos/whatsapp.png" style="width: 24px; height: 24px;" alt="Whatsapp"></a> Whatsapp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>

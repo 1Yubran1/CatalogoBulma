@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="icon" href="img/logo.png" class="img-fluid" type="image/png">
+    <title>Nich</title>
+  <style>
+    /* Estilos para las imágenes pequeñas */
+    .img-thumbnail {
+      cursor: pointer; /* Cambia el cursor a una mano al pasar sobre las imágenes */
+      transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para la sombra */
+    }
+    .img-thumbnail.active {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Sombra para la imagen activa */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <img src="img/logo.png" alt="Logo" width="100" height="100">
+          <a class="navbar-item" href="index.html">Nich</a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarSupportedContent">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarSupportedContent" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="index.html">Inicio</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Ropa</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="vestidos.html">Vestidos</a>
+                <a class="navbar-item" href="blusas.html">Blusas</a>
+                <a class="navbar-item" href="jeans.html">Pantalones</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="bolsos.html">Bolsos</a>
+            <a class="navbar-item" href="sobrenosotros.html">Sobre Nosotros</a>
+            <a class="navbar-item" href="contactanos.html">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+  <br>
+  <h1 class="title has-text-centered">Vestidos para dama</h1>
+  <br>
+
+  <div class="container">
+    <div class="columns is-centered">
+      <!-- Vestido 1 -->
+      <div class="column is-3">
+        <br>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ropa/vestidos/vestido1.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Vestido rosado</p>
+            <p class="subtitle is-6">$299.99</p>
+            <span class="badge is-danger">-$399.00</span>
+            <ul class="list-group">
+              <li class="list-group-item">Talla: Ch</li>
+            </ul>
+            <div class="buttons is-centered">
+              <a href="#" class="button is-primary">Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3">
+        <br>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ropa/vestidos/vestido2.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Vestido floreado</p>
+            <p class="subtitle is-6">$159.90</p>
+            <span class="badge is-danger">-$399.00</span>
+            <ul class="list-group">
+              <li class="list-group-item">Talla: M</li>
+            </ul>
+            <div class="buttons is-centered">
+              <a href="#" class="button is-primary">Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3">
+        <br>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ropa/vestidos/vestido3.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Vestido azul</p>
+            <p class="subtitle is-6">$399.99</p>
+            <ul class="list-group">
+              <li class="list-group-item">Talla: M</li>
+            </ul>
+            <div class="buttons is-centered">
+              <a href="#" class="button is-primary">Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3">
+        <br>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/ropa/vestidos/vestido4.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Vestido blanco</p>
+            <p class="subtitle is-6">$299.99</p>
+            <ul class="list-group">
+              <li class="list-group-item">Talla: M</li>
+            </ul>
+            <div class="buttons is-centered">
+              <a href="#" class="button is-primary">Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modales -->
+  <!-- Modal 1 -->
+  <div class="modal" id="exampleModal1">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Vestido rosado</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- Imagen grande -->
+        <img src="img/ropa/vestidos/vestido1.jpg" class="img-fluid" alt="...">
+        <!-- Tres imágenes pequeñas -->
+        <div class="row mt-3">
+          <!-- Imágenes pequeñas -->
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Guardar cambios</button>
+        <button class="button" aria-label="close">Cancelar</button>
+      </footer>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">Vestido floreado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Imagen grande -->
+          <img src="img/ropa/vestidos/vestido2.jpg" id="imagenGrande2" class="img-fluid" alt="...">
+          <!-- Tres imágenes pequeñas -->
+          <div class="row mt-3">
+            <div class="col">
+              <!-- Cambia el atributo data-imagen con la URL de la imagen grande correspondiente -->
+              <img src="img/ropa/vestidos/vestido2.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido2.1.jpg" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/ropa/vestidos/vestido2.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido2.2.jpg" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/ropa/vestidos/vestido2.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido2.3.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Vestido azul</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Imagen grande -->
+        <img src="img/ropa/vestidos/vestido3.jpg" id="imagenGrande3" class="img-fluid" alt="...">
+        <!-- Tres imágenes pequeñas -->
+        <div class="row mt-3">
+          <div class="col">
+            <!-- Cambia el atributo data-imagen con la URL de la imagen grande correspondiente -->
+            <img src="img/ropa/vestidos/vestido3.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido3.1.jpg" alt="...">
+          </div>
+          <div class="col">
+            <img src="img/ropa/vestidos/vestido3.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido3.2.jpg" alt="...">
+          </div>
+          <div class="col">
+            <img src="img/ropa/vestidos/vestido3.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido3.3.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel4">Vestido blanco</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Imagen grande -->
+        <img src="img/ropa/vestidos/vestido4.jpg" id="imagenGrande4" class="img-fluid" alt="...">
+        <!-- Tres imágenes pequeñas -->
+        <div class="row mt-3">
+          <div class="col">
+            <!-- Cambia el atributo data-imagen con la URL de la imagen grande correspondiente -->
+            <img src="img/ropa/vestidos/vestido4.1.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido4.1.jpg" alt="...">
+          </div>
+          <div class="col">
+            <img src="img/ropa/vestidos/vestido4.2.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido4.2.jpg" alt="...">
+          </div>
+          <div class="col">
+            <img src="img/ropa/vestidos/vestido4.3.jpg" class="img-thumbnail imagen-pequena" data-imagen="img/ropa/vestidos/vestido4.3.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer" style="background-color: #56585a; color: white;">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column">
+          <h4 class="title is-4">Síguenos</h4>
+          <div class="redes-sociales">
+            <a href="#"><img src="img/iconos/facebook.png" style="width: 24px; height: 24px;" alt="Facebook"></a>
+            <a href="#"><img src="img/iconos/instagram.png" style="width: 24px; height: 24px;" alt="Instagram"></a>
+            <a href="#"><img src="img/iconos/twitter.png" style="width: 24px; height: 24px;" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-4">Agrega un comentario</h4>
+          <input type="text" class="input" id="inputComentario" placeholder="Escribe tu comentario...">
+          <div class="buttons is-centered">
+            <button class="button is-primary" type="button">Enviar</button>
+          </div>
+        </div>
+        <div class="column">
+          <h4 class="title is-4">Contacto</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="tel:+123456789"><img src="img/iconos/llamada-telefonica.png" style="width: 24px; height: 24px;" alt="Teléfono"></a> Número de telefono</li>
+            <li class="list-group-item"><a href="mailto:info@example.com"><img src="img/iconos/correo.png" style="width: 24px; height: 24px;" alt="Correo electrónico"></a> Correo electrónico</li>
+            <li class="list-group-item"><a href="mailto:info@example.com"><img src="img/iconos/whatsapp.png" style="width: 24px; height: 24px;" alt="Whatsapp"></a> Whatsapp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>
